@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Сацыятэхніка. Пачаткі</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сацыятэхніка. Пачаткі. Кніга пра супольнасці, іх стварэнне і разуменне. Аўтар Міхаіл Волчак“</title>
+    <meta name="description" content="Як выглядае жыццё нефармальных калектываў? Чаму яны наогул з’яўляюцца і адыгрываюць значную, а часта ключавую ролю ў нашым жыцці? Па якіх прынцыпах развіваюцца і ўзаемадзейнічаюць паміж сабой? З якой прычыны супольнасці ўрэшце знікаюць? І што пакідаюць пасля сябе для нас? Можа нешта сапраўды важнае? Дарэчы, хто такі сацыятэхнік?"/>
+    <link rel="canonical" href="https://book.talash.by/" />
+    <meta property="og:title" content='Кніга "Сацыятэхніка. Пачаткі" пра супольнасці, іх развіццё і разуменне' />
+    <meta property="og:url" content="https://book.talash.by/"/>
+    <meta property="og:description" content="Як выглядае жыццё нефармальных калектываў? Чаму яны наогул з’яўляюцца і адыгрываюць значную, а часта ключавую ролю ў нашым жыцці? Па якіх прынцыпах развіваюцца і ўзаемадзейнічаюць паміж сабой? З якой прычыны супольнасці ўрэшце знікаюць? І што пакідаюць пасля сябе для нас? Можа нешта сапраўды важнае? Дарэчы, хто такі сацыятэхнік? "/>
+    <meta property="og:image" content="https://book.talash.by/assets/description.jpg"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-900">
     <header class="bg-cyan-100 shadow p-4 ">
         <nav class="max-w-7xl mx-auto flex items-center justify-between">
-            <div class="text-2xl font-bold text-gray-950">
+            <div class="text-lg md:text-2xl font-bold text-gray-950">
                 Сацыятэхніка. Пачаткі
             </div>
 
@@ -20,26 +31,28 @@
                     </button>
                 </a>
 
-                <button id="burger" class="hidden md:flex flex-col space-y-1 cursor-pointer">
+                <button id="openDrawer" class="flex flex-col space-y-1 cursor-pointer">
                     <span class="block w-6 h-[2px] bg-black"></span>
                     <span class="block w-6 h-[2px] bg-black"></span>
                     <span class="block w-6 h-[2px] bg-black"></span>
                 </button>
             </div>
 
-            <ul id="menu" class="hidden absolute top-16 right-4 bg-white shadow-lg rounded p-4 space-y-2">
-                <li><a href="#description" class="block p-2 hover:bg-gray-200 rounded">Апісанне кнігі</a></li>
-                <li><a href="#creation" class="block p-2 hover:bg-gray-200 rounded">Стварэнне</a></li>
-                <li><a href="#contents" class="block p-2 hover:bg-gray-200 rounded">Змест</a></li>
-                <li><a href="#author" class="block p-2 hover:bg-gray-200 rounded">Пра аўтара</a></li>
-                <li><a href="#contacts" class="block p-2 hover:bg-gray-200 rounded">Кантакты</a></li>
-            </ul>
+            <div id="backdrop" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+            <div id="drawer" class="fixed top-0 right-0 h-full w-1/2 md:w-1/4 font-semibold bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 p-4">
+                <ul class="mt-8 space-y-2 md:pl-6">
+                    <li><a href="#description" class="drawer-link block hover:underline">Апісанне кнігі</a></li>
+                    <li><a href="#creation" class="drawer-link block hover:underline">Стварэнне</a></li>
+                    <li><a href="#contents" class="drawer-link block hover:underline">Змест</a></li>
+                    <li><a href="#author" class="drawer-link block hover:underline">Пра аўтара</a></li>
+                    <li><a href="#contacts" class="drawer-link block hover:underline">Кантакты</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-
-        <section id="description" class="bg-white py-12">
+        <section class="bg-white py-12">
             <div class="max-w-3xl mx-auto px-4">
                 <h2 class="text-xl font-bold text-gray-900 mb-4">
                     Прома відэа
@@ -57,7 +70,7 @@
             </div>
         </section>
 
-        <section class="bg-cyan-50 py-16 px-6">
+        <section id="description" class="bg-cyan-50 py-16 px-6">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
                 <div class="md:w-1/2 mb-10 md:mb-0">
                     <h2 class="text-xl font-bold text-gray-900 mb-4">
@@ -118,7 +131,7 @@
                     </div>
 
                     <div class="flex flex-row-reverse">
-                        <button id="readMoreBtn" class="mt-2 text-blue-600 underline cursor-pointer">Разгарнуць тэкст</button>
+                        <button id="readMoreBtn" class="mt-2 text-cyan-900 underline cursor-pointer">Разгарнуць тэкст</button>
                     </div>
                     <div>
                         <a href="https://buymeacoffee.com/talashby/extras" target="_blank">
@@ -192,9 +205,9 @@
             <h2 class="text-3xl font-bold text-gray-900 text-center">Змест</h2>
 
             <div class="w-fit mx-auto text-center my-12 flex space-x-4 mb-4">
-                <button class="tab-btn text-blue-600 font-bold" data-tab="tab1">Частка 1</button>
-                <button class="tab-btn text-gray-600" data-tab="tab2">Частка 2</button>
-                <button class="tab-btn text-gray-600" data-tab="tab3">Частка 3</button>
+                <button class="tab-btn text-cyan-500 font-bold" data-tab="tab1">Частка 1</button>
+                <button class="tab-btn text-cyan-500" data-tab="tab2">Частка 2</button>
+                <button class="tab-btn text-cyan-500" data-tab="tab3">Частка 3</button>
             </div>
 
             <div id="tab1" class="tab-content">
@@ -207,7 +220,7 @@
                 </div>
                 <div class="max-w-3xl mx-auto space-y-6">
                 <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                        <ul class="text-lg font-semibold text-gray-800">
+                        <ul class="text-sm md:text-lg font-semibold text-gray-800">
                             <li>Тэма 1. Якую супольнасць мы ствараем.</li>
                             <li>Тэма 2. Які базавы набор роляў у супольнасці.</li>
                             <li>Тэма 3. Як далучаць новага ўдзельніка.</li>
@@ -235,7 +248,7 @@
 
                 <div class="max-w-3xl mx-auto space-y-6">
                     <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                        <ul class="text-lg font-semibold text-gray-800">
+                        <ul class="text-sm md:text-lg font-semibold text-gray-800">
                             <li>Тэма 11. Вызначаем эфектыўнасць супольнасці.</li>
                             <li>Тэма 12. З чаго складаюцца рэсурсы супольнасці, і як імі кіраваць.</li>
                             <li>Тэма 13. Сімвалічны рэсурс: знакі, гісторыі і слоўнікі.</li>
@@ -263,7 +276,7 @@
 
                 <div class="max-w-3xl mx-auto space-y-6">
                     <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                        <ul class="text-lg font-semibold text-gray-800">
+                        <ul class="text-sm md:text-lg font-semibold text-gray-800">
                             <li>Тэма 21. Як cупольнасці пазбаўляюцца ад непатрэбнага ўплыву.</li>
                             <li>Тэма 22. Этап зрэласці. Як вырашаць канфлікты ў супольнасці.</li>
                             <li>Тэма 23. Давер і аўтарытэт у супольнасці на розных этапах жыцця.</li>
@@ -329,14 +342,14 @@
                   <span>Buy Me A Coffee</span>
                 </a>
 
-                <a href="https://sactech.talash.by/" target="_blank" class="flex items-center space-x-2 hover:text-blue-600">
+                <a href="https://sactech.talash.by/" target="_blank" class="flex items-center space-x-2 hover:text-cyan-600">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.9V18h-2v1.9A8.01 8.01 0 014.1 13H6v-2H4.1A8.01 8.01 0 0111 4.1V6h2V4.1A8.01 8.01 0 0119.9 11H18v2h1.9A8.01 8.01 0 0113 19.9z"/>
                   </svg>
                   <span>SacTech</span>
                 </a>
 
-                <a href="https://www.facebook.com/mikhail.volczak" target="_blank" class="flex items-center space-x-2 hover:text-blue-700">
+                <a href="https://www.facebook.com/mikhail.volczak" target="_blank" class="flex items-center space-x-2 hover:text-cyan-700">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.5 9.9v-7h-2.5v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.7l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/>
                   </svg>
@@ -367,27 +380,20 @@
     </footer>
 
     <script>
-        const burger = document.getElementById('burger');
-        const menu = document.getElementById('menu');
-
-        burger.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-
         const tabButtons = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
 
         tabButtons.forEach(button => {
             button.addEventListener('click', () => {
                 tabButtons.forEach(btn => {
-                    btn.classList.remove('text-blue-600', 'font-bold');
-                    btn.classList.add('text-gray-600');
+                    btn.classList.remove('text-cyan-600', 'font-bold');
+                    btn.classList.add('text-cyan-500');
                 });
 
                 tabContents.forEach(content => content.classList.add('hidden'));
 
-                button.classList.add('text-blue-600', 'font-bold');
-                button.classList.remove('text-gray-600');
+                button.classList.add('text-cyan-600', 'font-bold');
+                button.classList.remove('text-cyan-500');
 
                 const tabId = button.getAttribute('data-tab');
                 document.getElementById(tabId).classList.remove('hidden');
@@ -396,6 +402,7 @@
 
         const text = document.getElementById('text');
         const btn = document.getElementById('readMoreBtn');
+        const drawerLinks = document.querySelectorAll('.drawer-link');
 
         btn.addEventListener('click', () => {
             if (text.classList.contains('max-h-[408px]')) {
@@ -405,6 +412,37 @@
                 text.classList.add('max-h-[408px]');
                 btn.textContent = 'Разгарнуць тэкст';
             }
+        });
+
+        const openBtn = document.getElementById('openDrawer');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+        openBtn.addEventListener('click', () => {
+            drawer.classList.remove('translate-x-full');
+            backdrop.classList.remove('hidden');
+        });
+
+        backdrop.addEventListener('click', closeDrawer);
+
+        document.addEventListener('click', (event) => {
+        const isClickInsideDrawer = drawer.contains(event.target);
+        const isClickOnButton = openBtn.contains(event.target);
+
+        if (!isClickInsideDrawer && !isClickOnButton && !backdrop.classList.contains('hidden')) {
+            closeDrawer();
+        }
+        });
+
+        function closeDrawer() {
+            drawer.classList.add('translate-x-full');
+            backdrop.classList.add('hidden');
+        }
+
+        drawerLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeDrawer();
+            });
         });
     </script>
 </body>
