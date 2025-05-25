@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сацыятэхніка. Пачаткі. Кніга пра супольнасці, іх стварэнне і разуменне. Аўтар Міхаіл Волчак“</title>
+    <meta name="description" content="Як выглядае жыццё нефармальных калектываў? Чаму яны наогул з’яўляюцца і адыгрываюць значную, а часта ключавую ролю ў нашым жыцці? Па якіх прынцыпах развіваюцца і ўзаемадзейнічаюць паміж сабой? З якой прычыны супольнасці ўрэшце знікаюць? І што пакідаюць пасля сябе для нас? Можа нешта сапраўды важнае? Дарэчы, хто такі сацыятэхнік?"/>
+    <link rel="canonical" href="https://book.talash.by/" />
+    <meta property="og:title" content='Кніга "Сацыятэхніка. Пачаткі" пра супольнасці, іх развіццё і разуменне' />
+    <meta property="og:url" content="https://book.talash.by/"/>
+    <meta property="og:description" content="Як выглядае жыццё нефармальных калектываў? Чаму яны наогул з’яўляюцца і адыгрываюць значную, а часта ключавую ролю ў нашым жыцці? Па якіх прынцыпах развіваюцца і ўзаемадзейнічаюць паміж сабой? З якой прычыны супольнасці ўрэшце знікаюць? І што пакідаюць пасля сябе для нас? Можа нешта сапраўды важнае? Дарэчы, хто такі сацыятэхнік? "/>
+    <meta property="og:image" content="https://book.talash.by/assets/description.jpg"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-cyan-100 shadow p-4 ">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="text-lg md:text-2xl font-bold text-gray-950">
+                Сацыятэхніка. Пачаткі
+            </div>
+
+            <div class="flex gap-4 items-center">
+                <a href="https://buymeacoffee.com/talashby/extras" target="_blank" >
+                    <button class="bg-cyan-600 text-white px-4 py-2 rounded hover:bg-cyan-700 transition">
+                        Прадзамовіць
+                    </button>
+                </a>
+
+                <button id="openDrawer" class="flex flex-col space-y-1 cursor-pointer">
+                    <span class="block w-6 h-[2px] bg-black"></span>
+                    <span class="block w-6 h-[2px] bg-black"></span>
+                    <span class="block w-6 h-[2px] bg-black"></span>
+                </button>
+            </div>
+
+            <div id="backdrop" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+            <div id="drawer" class="fixed top-0 right-0 h-full w-1/2 md:w-1/4 font-semibold bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 p-4">
+                <ul class="mt-8 space-y-2 md:pl-6">
+                    <li><a href="#description" class="drawer-link block hover:underline">Апісанне кнігі</a></li>
+                    <li><a href="#creation" class="drawer-link block hover:underline">Стварэнне</a></li>
+                    <li><a href="#contents" class="drawer-link block hover:underline">Змест</a></li>
+                    <li><a href="#author" class="drawer-link block hover:underline">Пра аўтара</a></li>
+                    <li><a href="#contacts" class="drawer-link block hover:underline">Кантакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-white py-12">
+            <div class="max-w-3xl mx-auto px-4">
+                <h2 class="text-xl font-bold text-gray-900 mb-4">
+                    Прома відэа
+                </h2>
+              <div class="aspect-video">
+                <iframe
+                  class="w-full h-full"
+                  src="https://www.youtube.com/embed/FHTJ44KXX-M"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+        </section>
+
+        <section id="description" class="bg-cyan-50 py-16 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">
+                        Апісанне кнігі
+                    </h2>
+
+                    <div id="text" class="overflow-hidden max-h-[408px] transition-all duration-500">
+                        <p class="text-lg text-gray-700 mb-6">
+                            Цікава ўдзельнічаць у нефармальных калектывах?
+                            Ці ствараць свой уласны? Хочаш даведацца, па якім законам развіваецца прафесійная гільдыя,
+                            клуб па інтарэсах, дваровы калектыў ці анлайн супольнасць?
+                        </p>
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            Выдатна! Ты пастукаўся ў патрэбныя дзверы.
+                            Будаваць калектывы - гэта не толькі займальна, гэта патрэбна.
+                            Малыя групы ўплываюць на вялікае грамадства, у якім мы жывем тут і цяпер.
+                        </p>
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            <b>“Сацыятэхніка. Пачаткі”</b> пра маё захапленне стварэннем нефармальных калектываў.
+                            Яна пра мой шлях у гэтым будаванні. Шлях поўны адкрыццяў і
+                            памылак. З часам мае крокі становяцца больш і больш упэўненымі, выніковымі і ўплывовымі.
+                            Чым далей іду, тым больш я заўважаю залежнасці ў жыцці нефармальных груп, суполак, супольнасцяў.
+                        </p>
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            На старонкі кнігі я сабраў уласную практыку, запісаў назіранні і веды,
+                            пачарпнутыя з даследванняў і эксперыментаў папярэдніх <b>сацыятэхнікаў</b>.
+                            Я прэпарую малыя групы, выкаростоўваючы, як навуковыя метады так і сваю інтуіцыю.
+                            Мой досвед не ёсць універсальны, аднак мая памяць, назіральнасць, інтэлектуальны багаж,
+                            а таксама прага дакапацца да сутнасці, падказваюць, што ў жыцці нефармальных калектываў
+                            ёсць заканамернасці. Гэтыя заканамернасці я апісваю крок па кроку.
+                        </p>
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            Як выглядае жыццё нефармальных калектываў?
+                            Чаму яны наогул з’яўляюцца і адыгрываюць значную, а часта ключавую ролю
+                            ў нашым жыцці? Па якіх прынцыпах развіваюцца і ўзаемадзейнічаюць паміж сабой?
+                            З якой прычыны супольнасці ўрэшце знікаюць? І што пакідаюць пасля сябе для нас?
+                            Можа нешта сапраўды важнае? Дарэчы, хто такі сацыятэхнік?
+                        </p>
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            Гэта кніга не проста апісанне і сістэматызацыя майго досведу,
+                            я пісаў яе перш за ўсё для тых, беларусаў, якія гатовы выбудоўваць
+                            наша грамадства нанова на прынцыпах адкрытасці і ўключанасці.
+                            Я ствараў Пачаткі як дапаможнік для дзеяння. Чаму?
+                        </p>
+
+                        <p class="text-lg text-gray-700 mb-6">
+                            Грамадства – гэта лес. А супольнасці – гэта арганізмы,
+                            якія жывуць у гэтым лесе і ўзаемадзенічаюць з ландшафтам і паміж сабой.
+                            Мая кніга пра вось гэты малыя групы, нефармальныя калектывы, суполкі грамадзян
+                            засяляючыя гэты “лес”. Ведаючы як жывуць арганізмы пад назвай – супольнасць,
+                            можна будаваць, ствараць, пачаць засяляць грамадства.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-row-reverse">
+                        <button id="readMoreBtn" class="mt-2 text-cyan-900 underline cursor-pointer">Разгарнуць тэкст</button>
+                    </div>
+                    <div>
+                        <a href="https://buymeacoffee.com/talashby/extras" target="_blank">
+                            <button class="bg-cyan-600 text-white px-6 py-3 rounded hover:bg-cyan-700 transition">
+                                Прадзамовіць
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 relative md:pt-12 md:pl-10">
+                    <div class="overflow-hidden shadow-lg rounded-lg">
+                        <img src="./assets/Free_Book_Mockup_1_copy.jpg" alt="Hero Image" class="w-full h-auto" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="creation" class="bg-cyan-900 py-16 px-6">
+            <div class="max-w-7xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Працэс стварэння</h2>
+                <p class="mt-4 text-gray-50">5 простых крокаў ад ідэі да друку</p>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-4 max-w-6xl mx-auto">
+                <div class="bg-white shadow rounded-lg p-6 w-40 text-center">
+                    <div class="text-4xl font-bold text-cyan-600 mb-2">1</div>
+                    <h3 class="text-xl font-semibold mb-1">Рукапіс</h3>
+                </div>
+                <svg class="w-8 h-8 text-gray-400 hidden sm:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+                <div class="bg-white shadow rounded-lg p-6 w-40 text-center">
+                    <div class="text-4xl font-bold text-cyan-600 mb-2">2</div>
+                    <h3 class="text-xl font-semibold mb-1">Выявы</h3>
+                </div>
+                <svg class="w-8 h-8 text-gray-400 hidden sm:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+                <div class="bg-green-100 shadow rounded-lg p-6 w-40 text-center">
+                    <div class="text-4xl font-bold text-cyan-600 mb-2">3</div>
+                    <h3 class="text-xl font-semibold mb-1">Вычытка</h3>
+                </div>
+                <svg class="w-8 h-8 text-gray-400 hidden sm:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+                <div class="bg-white shadow rounded-lg p-6 w-40 text-center">
+                    <div class="text-4xl font-bold text-cyan-600 mb-2">4</div>
+                    <h3 class="text-xl font-semibold mb-1">Верстка</h3>
+                </div>
+                <svg class="w-8 h-8 text-gray-400 hidden sm:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+                <div class="bg-white shadow rounded-lg p-6 w-40 text-center">
+                    <div class="text-4xl font-bold text-cyan-600 mb-2">5</div>
+                    <h3 class="text-xl font-semibold mb-1">Друк</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-cyan-900 py-20">
+            <div class="max-w-7xl mx-auto text-center">
+                <a href="https://buymeacoffee.com/talashby/extras" target="_blank">
+                    <button class="bg-cyan-100 text-grey-950 text-lg px-8 py-4 rounded hover:bg-cyan-200 transition">
+                        Прадзамовіць
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section id="contents" class="bg-cyan-50 py-16 px-6">
+            <h2 class="text-3xl font-bold text-gray-900 text-center">Змест</h2>
+
+            <div class="w-fit mx-auto text-center my-12 flex space-x-4 mb-4">
+                <button class="tab-btn text-cyan-500 font-bold" data-tab="tab1">Частка 1</button>
+                <button class="tab-btn text-cyan-500" data-tab="tab2">Частка 2</button>
+                <button class="tab-btn text-cyan-500" data-tab="tab3">Частка 3</button>
+            </div>
+
+            <div id="tab1" class="tab-content">
+                <div class="max-w-4xl mx-auto text-center my-12">
+                    <p>
+                        Пра супольнасць як калектыўны суб’ект, які ўзнікае, вызначаецца з ідэалам, пачынае дзеяць,
+                        фармуе сваю суб’ектнасць, сустракаецца з першымі выклікамі, абазначае свае межы і спосабы дзеяння,
+                        падставы існавання, самакіраванне. Іншымі словамі, шукае сваё месца пад сонцам.
+                    </p>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                        <ul class="text-sm md:text-lg font-semibold text-gray-800">
+                            <li>Тэма 1. Якую супольнасць мы ствараем.</li>
+                            <li>Тэма 2. Які базавы набор роляў у супольнасці.</li>
+                            <li>Тэма 3. Як далучаць новага ўдзельніка.</li>
+                            <li>Тэма 4. Навошта ведаць межы супольнасці.</li>
+                            <li>Тэма 5. Як уплываюць культура, каштоўнасці і мэты на пабудову супольнасці.</li>
+                            <li>Тэма 6. Што рабіць з “лішнімі” людзьмі ў супольнасці.</li>
+                            <li>Тэма 7. Мала людзей. Якой велічыні групы дастаткова.</li>
+                            <li>Тэма 8. Як прызначаюцца “кіраўнікі” і “выканаўцы” ў супольнасці.</li>
+                            <li>Тэма 9. Як адбываецца прыняцце рашэнняў у нефармальных супольнасцях.</li>
+                            <li>Тэма 10. Як і навошта арыентавацца ў этапах развіцця супольнасці.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tab2" class="tab-content hidden">
+                <div class="max-w-4xl mx-auto text-center my-12">
+                    <p>
+                        Яна пра супольнасць у піку свайго існавання.
+                        Калектыў набірае максімальную моц, колькасць рэсурсаў,
+                        агенцыі. Тут я апісваю, як супольнасці ўпэўнена імкнуцца да сваіх ідэалаў устойлівасці,
+                        адказваюць на драматычныя выклікі для цэласнасці, памнажаюцца, а таксама акрэсліваю кантакт
+                        супольнасці з іншымі. Важна, што ў гэтай частцы вызначаю месца сацыятэхніка ў жыцці супольнасці.
+                    </p>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                        <ul class="text-sm md:text-lg font-semibold text-gray-800">
+                            <li>Тэма 11. Вызначаем эфектыўнасць супольнасці.</li>
+                            <li>Тэма 12. З чаго складаюцца рэсурсы супольнасці, і як імі кіраваць.</li>
+                            <li>Тэма 13. Сімвалічны рэсурс: знакі, гісторыі і слоўнікі.</li>
+                            <li>Тэма 14. Кантралюем рост універсальных і спецыялізаваных супольнасцяў.</li>
+                            <li>Тэма 15. Чаму ўзнікае патрэба ў змене дзейнасці.</li>
+                            <li>Тэма 16. Што варта рабіць з колам прыхільнікаў.</li>
+                            <li>Тэма 17. Месца сацыятэхніка ў суполцы.</li>
+                            <li>Тэма 18. Будуем доўгатэрміновыя адносіны паміж супольнасцямі.</li>
+                            <li>Тэма 19. ТОП-9 прычын. Чаму супольнасць змяншаецца.</li>
+                            <li>Тэма 20. Хто і як вызначае ролі ў суполцы на розных этапах яе жыцця.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="tab3" class="tab-content hidden">
+                <div class="max-w-4xl mx-auto text-center my-12">
+                    <p>
+                        Тут працягваю разглядаць супольнасць у яе спеласці, таксама больш увагі звяртаю на дынаміку развіцця,
+                        у тым ліку даверу, аўтарытэту, самарэфлексіі на позніх этапах.
+                        Даволі значны кавалак прысвечаны дзяленню, узаемадзеянню супольнасці з
+                        вонкавым асяродкам, у тым ліку пераход супольнасці на наступныя этапы існавання:
+                        шмат’ядравасць, кластэрызацыя.
+                    </p>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
+                        <ul class="text-sm md:text-lg font-semibold text-gray-800">
+                            <li>Тэма 21. Як cупольнасці пазбаўляюцца ад непатрэбнага ўплыву.</li>
+                            <li>Тэма 22. Этап зрэласці. Як вырашаць канфлікты ў супольнасці.</li>
+                            <li>Тэма 23. Давер і аўтарытэт у супольнасці на розных этапах жыцця.</li>
+                            <li>Тэма 24. Перадача ведаў. Чаму не абыйсціся без дакументавання.</li>
+                            <li>Тэма 25. Навошта разумець гарызантальную і вертыкальную іерархію ў групе. Калектыўнае і адзінаасобнае лідэрства.</li>
+                            <li>Тэма 26. Калі патрэбна фармальная арганізацыя супольнасці.</li>
+                            <li>Тэма 27. Што рабіць з канкуруючымі і капліментарнымі супольнасцямі.</li>
+                            <li>Тэма 28. Рост і зрэласць. Плюсы і мінусы шматядзерных супольнасцяў.</li>
+                            <li>Тэма 29. Супольнасць супольнасцяў. Ці магчыма асамблея суполак.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="author" class="bg-white py-20 px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Міхаіл Волчак</h2>
+                <ul class="space-y-4">
+                <li class="flex items-start">
+                    З 2003 года я актыўна пагружаны ў грамадскае жыццё і працягваю ўдзельнічаць зараз.
+                    Большасць маёй практыкі - гэта арганізацыйны і актывісцкі досвед, дзе я ўдзельнічаў
+                    і ствараў тэматычныя клубы, супольнасці, нефармальныя калектывы і арганізацыі.
+                </li>
+                <li class="flex items-start">
+                    Да вымушанага ад’езду з Беларусі (канец 2022) пачынаў жыццё з сям’ёй у вёсцы Застружжа на Палессі.
+                </li>
+                <li class="flex items-start">
+                    Сярод маіх працяглых хобі – пчалярства.
+                </li>
+                <li class="flex items-start">
+                    Люблю ровары і прыроду. На жыццё зараз зарабляю коўчынгам англійскай мовы.
+                </li>
+                <li class="flex items-start">
+                    Маю звычку чытаць кнігі і дзейнічаць згодна кантаўскаму “маральнаму імператыву”.
+                </li>
+                </ul>
+            </div>
+
+            <div class="flex justify-center">
+                <img
+                class="w-[520px] h-[420px] object-cover rounded-lg shadow-lg"
+                src="./assets/author-portrait.jpg"
+                alt="Міхаіл Волчак Portrait"
+                >
+            </div>
+        </section>
+        <section id="contacts" class="bg-gray-100 py-12">
+            <div class="max-w-4xl mx-auto px-6">
+              <h2 class="text-3xl font-bold text-center mb-8">Мае кантакты</h2>
+              <div class="flex flex-wrap justify-center gap-6">
+
+                <a href="https://www.youtube.com/@societaltechnics" target="_blank" class="flex items-center space-x-2 hover:text-red-600">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.5 6.2s-.2-1.7-.8-2.4c-.7-.8-1.5-.8-1.8-.9C17.8 2.5 12 2.5 12 2.5h-.1s-5.8 0-8.9.4c-.3.1-1.1.1-1.8.9-.6.7-.8 2.4-.8 2.4S0 8.3 0 10.4v1.2c0 2.1.2 4.2.2 4.2s.2 1.7.8 2.4c.7.8 1.7.8 2.1.9 1.5.1 6.7.4 8.9.4s8.9 0 8.9-.4c.3 0 1.1 0 1.8-.9.6-.7.8-2.4.8-2.4s.2-2.1.2-4.2v-1.2c0-2.1-.2-4.2-.2-4.2zM9.5 14.7V8.7l6.3 3-6.3 3z"/>
+                  </svg>
+                  <span>YouTube</span>
+                </a>
+
+                <a href="https://buymeacoffee.com/talashby" target="_blank" class="flex items-center space-x-2 hover:text-yellow-500">
+                  <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy Me A Coffee" class="w-6 h-6">
+                  <span>Buy Me A Coffee</span>
+                </a>
+
+                <a href="https://sactech.talash.by/" target="_blank" class="flex items-center space-x-2 hover:text-cyan-600">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.9V18h-2v1.9A8.01 8.01 0 014.1 13H6v-2H4.1A8.01 8.01 0 0111 4.1V6h2V4.1A8.01 8.01 0 0119.9 11H18v2h1.9A8.01 8.01 0 0113 19.9z"/>
+                  </svg>
+                  <span>SacTech</span>
+                </a>
+
+                <a href="https://www.facebook.com/mikhail.volczak" target="_blank" class="flex items-center space-x-2 hover:text-cyan-700">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22 12c0-5.5-4.5-10-10-10S2 6.5 2 12c0 5 3.7 9.1 8.5 9.9v-7h-2.5v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.7-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6v1.9h2.7l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12z"/>
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+
+                <a href="https://github.com/rizomaa/sacjatek-book" target="_blank" class="flex items-center space-x-2 hover:text-gray-800">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.2 6.8 9.5.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.4-3.4-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1.7 1.5.7 1.5 1.2 2 3.1 1.4 3.9 1.1.1-.9.5-1.4.9-1.7-2.2-.3-4.6-1.2-4.6-5.1 0-1.1.4-2 1.1-2.7-.1-.3-.5-1.3.1-2.6 0 0 .9-.3 2.8 1.1.8-.2 1.6-.3 2.4-.3.8 0 1.6.1 2.4.3 1.9-1.4 2.8-1.1 2.8-1.1.6 1.3.2 2.3.1 2.6.7.7 1.1 1.6 1.1 2.7 0 3.9-2.4 4.8-4.6 5.1.5.5 1 .1 1.3 1.7v2.5c0 .3.2.6.7.5 3.9-1.3 6.8-5 6.8-9.5C22 6.6 17.5 2 12 2z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a href="https://talash.by/" target="_blank" class="flex items-center space-x-2 hover:text-green-600">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 17.9V18h-2v1.9A8.01 8.01 0 014.1 13H6v-2H4.1A8.01 8.01 0 0111 4.1V6h2V4.1A8.01 8.01 0 0119.9 11H18v2h1.9A8.01 8.01 0 0113 19.9z"/>
+                  </svg>
+                  <span>Talash.by</span>
+                </a>
+
+              </div>
+            </div>
+          </section>
+    </main>
+
+    <footer class="bg-cyan-600 text-white text-center p-4">
+        Creative Commons BY-SA Міхаіл Волчак
+    </footer>
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                tabButtons.forEach(btn => {
+                    btn.classList.remove('text-cyan-600', 'font-bold');
+                    btn.classList.add('text-cyan-500');
+                });
+
+                tabContents.forEach(content => content.classList.add('hidden'));
+
+                button.classList.add('text-cyan-600', 'font-bold');
+                button.classList.remove('text-cyan-500');
+
+                const tabId = button.getAttribute('data-tab');
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+
+        const text = document.getElementById('text');
+        const btn = document.getElementById('readMoreBtn');
+        const drawerLinks = document.querySelectorAll('.drawer-link');
+
+        btn.addEventListener('click', () => {
+            if (text.classList.contains('max-h-[408px]')) {
+                text.classList.remove('max-h-[408px]');
+                btn.textContent = 'Згарнуць тэкст';
+            } else {
+                text.classList.add('max-h-[408px]');
+                btn.textContent = 'Разгарнуць тэкст';
+            }
+        });
+
+        const openBtn = document.getElementById('openDrawer');
+        const drawer = document.getElementById('drawer');
+        const backdrop = document.getElementById('backdrop');
+
+        openBtn.addEventListener('click', () => {
+            drawer.classList.remove('translate-x-full');
+            backdrop.classList.remove('hidden');
+        });
+
+        backdrop.addEventListener('click', closeDrawer);
+
+        document.addEventListener('click', (event) => {
+        const isClickInsideDrawer = drawer.contains(event.target);
+        const isClickOnButton = openBtn.contains(event.target);
+
+        if (!isClickInsideDrawer && !isClickOnButton && !backdrop.classList.contains('hidden')) {
+            closeDrawer();
+        }
+        });
+
+        function closeDrawer() {
+            drawer.classList.add('translate-x-full');
+            backdrop.classList.add('hidden');
+        }
+
+        drawerLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeDrawer();
+            });
+        });
+    </script>
+</body>
+</html>
